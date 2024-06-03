@@ -15,7 +15,7 @@ zkSync is built on ZK Rollup architecture. ZK Rollup is an L2 scaling solution i
 contract on the mainchain, while computation and storage are performed off-chain. For every Rollup block, a state
 transition zero-knowledge proof (SNARK) is generated and verified by the mainchain contract. This SNARK includes the
 proof of the validity of every single transaction in the Rollup block. Additionally, the public data update for every
-block is published over the mainchain network in the cheap calldata.
+block is published over the mainchain network in the cheap call data.
 
 This architecture provides the following guarantees:
 
