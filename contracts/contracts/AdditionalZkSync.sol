@@ -25,7 +25,7 @@ contract AdditionalZkSync is Storage, Config, Events, ReentrancyGuard {
     using SafeMath for uint256;
     using SafeMathUInt128 for uint128;
 
-    function increaseBalanceToWithdraw(bytes22 _packedBalanceKey, uint128 _amount) internal {
+    function increaseBalanceToWithdraw(bytes32 _packedBalanceKey, uint128 _amount) internal {
         uint128 balance = pendingBalances[_packedBalanceKey].balanceToWithdraw;
         pendingBalances[_packedBalanceKey] = PendingBalance(balance.add(_amount), FILLED_GAS_RESERVE_VALUE);
     }
